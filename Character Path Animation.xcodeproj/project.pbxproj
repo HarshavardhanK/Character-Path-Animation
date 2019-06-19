@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		D6A5085622BA329A00BE134E /* Character Path Animation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Character Path Animation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A5085922BA329A00BE134E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D6A5086022BA33C600BE134E /* Character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Character.json; sourceTree = "<group>"; };
+		D6A5086122BA33D500BE134E /* SVG-iOS-Trial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "SVG-iOS-Trial.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		D6A5084D22BA329A00BE134E = {
 			isa = PBXGroup;
 			children = (
+				D6A5086122BA33D500BE134E /* SVG-iOS-Trial.playground */,
 				D6A5085822BA329A00BE134E /* Character Path Animation */,
 				D6A5085722BA329A00BE134E /* Products */,
 			);
@@ -57,6 +60,7 @@
 		D6A5085822BA329A00BE134E /* Character Path Animation */ = {
 			isa = PBXGroup;
 			children = (
+				D6A5086022BA33C600BE134E /* Character.json */,
 				D6A5085922BA329A00BE134E /* main.swift */,
 			);
 			path = "Character Path Animation";
