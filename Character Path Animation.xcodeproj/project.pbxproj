@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F88D5B43D28EB87EF3BFF7 /* Pods_Character_Path_Animation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575B2F9BFFA18AB0C8306F06 /* Pods_Character_Path_Animation.framework */; };
 		D6A5085A22BA329A00BE134E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A5085922BA329A00BE134E /* main.swift */; };
+		D6A5086422BA346400BE134E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A5086322BA346400BE134E /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,10 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02A8A8AF1EE81A87C37F2EE7 /* Pods-Character Path Animation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Character Path Animation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Character Path Animation/Pods-Character Path Animation.release.xcconfig"; sourceTree = "<group>"; };
+		575B2F9BFFA18AB0C8306F06 /* Pods_Character_Path_Animation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Character_Path_Animation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3479495F7FADD094429F792 /* Pods-Character Path Animation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Character Path Animation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Character Path Animation/Pods-Character Path Animation.debug.xcconfig"; sourceTree = "<group>"; };
 		D6A5085622BA329A00BE134E /* Character Path Animation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Character Path Animation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A5085922BA329A00BE134E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D6A5086022BA33C600BE134E /* Character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Character.json; sourceTree = "<group>"; };
-		D6A5086122BA33D500BE134E /* SVG-iOS-Trial.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "SVG-iOS-Trial.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D6A5086122BA33D500BE134E /* Animation.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Animation.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D6A5086322BA346400BE134E /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,18 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F88D5B43D28EB87EF3BFF7 /* Pods_Character_Path_Animation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6704652DC73A8A4C2FCECFB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				575B2F9BFFA18AB0C8306F06 /* Pods_Character_Path_Animation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3387062226D7D598F14F8EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3479495F7FADD094429F792 /* Pods-Character Path Animation.debug.xcconfig */,
+				02A8A8AF1EE81A87C37F2EE7 /* Pods-Character Path Animation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D6A5084D22BA329A00BE134E = {
 			isa = PBXGroup;
 			children = (
-				D6A5086122BA33D500BE134E /* SVG-iOS-Trial.playground */,
+				D6A5086122BA33D500BE134E /* Animation.playground */,
 				D6A5085822BA329A00BE134E /* Character Path Animation */,
 				D6A5085722BA329A00BE134E /* Products */,
+				C3387062226D7D598F14F8EF /* Pods */,
+				6704652DC73A8A4C2FCECFB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 			children = (
 				D6A5086022BA33C600BE134E /* Character.json */,
 				D6A5085922BA329A00BE134E /* main.swift */,
+				D6A5086322BA346400BE134E /* Parser.swift */,
 			);
 			path = "Character Path Animation";
 			sourceTree = "<group>";
@@ -73,6 +100,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6A5085D22BA329A00BE134E /* Build configuration list for PBXNativeTarget "Character Path Animation" */;
 			buildPhases = (
+				206D831BE00048DA587C5FEA /* [CP] Check Pods Manifest.lock */,
 				D6A5085222BA329A00BE134E /* Sources */,
 				D6A5085322BA329A00BE134E /* Frameworks */,
 				D6A5085422BA329A00BE134E /* CopyFiles */,
@@ -118,11 +146,33 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		206D831BE00048DA587C5FEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Character Path Animation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6A5085222BA329A00BE134E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A5086422BA346400BE134E /* Parser.swift in Sources */,
 				D6A5085A22BA329A00BE134E /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +297,7 @@
 		};
 		D6A5085E22BA329A00BE134E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3479495F7FADD094429F792 /* Pods-Character Path Animation.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Z34Y633MA;
@@ -257,6 +308,7 @@
 		};
 		D6A5085F22BA329A00BE134E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02A8A8AF1EE81A87C37F2EE7 /* Pods-Character Path Animation.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Z34Y633MA;

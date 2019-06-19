@@ -1,0 +1,6 @@
+framework module Pods_Character_Path_Animation {
+  umbrella header "Pods-Character Path Animation-umbrella.h"
+
+  export *
+  module * { export * }
+}
